@@ -60,9 +60,10 @@ Proje, **bağımlılıkları azaltmak ve yönetilebilirliği artırmak** amacıy
 
 ## 🗂️ Proje Klasör Yapısı
 ```
-PetTrack
-├── Domain
-│   ├── Entities
+```bash
+📦 PetTrack
+├── 📁 Domain
+│   ├── 🧩 Entities
 │   │   ├── Pet.cs
 │   │   ├── PetOwner.cs
 │   │   ├── TrackerDevice.cs
@@ -70,44 +71,44 @@ PetTrack
 │   │   ├── HealthRecord.cs
 │   │   ├── VetAppointment.cs
 │   │   └── Alert.cs
-│   ├── Enums
+│   ├── ⚙️ Enums
 │   │   ├── EntityStatus.cs
 │   │   └── PetFamily.cs
-│   └── BaseEntity.cs
+│   └── 🧠 BaseEntity.cs
 │
-├── Application
-│   ├── DTOs
+├── 📁 Application
+│   ├── 💾 DTOs
 │   │   ├── PetDto.cs
 │   │   └── TrackerDeviceDto.cs
-│   ├── Interfaces
+│   ├── 🔌 Interfaces
 │   │   ├── IRepository.cs
 │   │   └── IUnitOfWork.cs
-│   ├── Services
+│   ├── 🧮 Services
 │   │   ├── PetService.cs
 │   │   ├── AlertService.cs
 │   │   └── HealthService.cs
-│   └── Exceptions
+│   └── ⚠️ Exceptions
 │       ├── NotFoundException.cs
 │       ├── ValidationException.cs
 │       └── DuplicateException.cs
 │
-├── Infrastructure
-│   ├── Context
+├── 📁 Infrastructure
+│   ├── 🗄️ Context
 │   │   ├── AppDbContext.cs
 │   │   └── DbInitializer.cs
-│   ├── Repository
+│   ├── 📚 Repository
 │   │   ├── GenericRepository.cs
-│   │   └── PetRepository.cs
-│   ├── UnitOfWork.cs
-│   └── Seed
+│   │   ├── PetRepository.cs
+│   │   └── TrackerRepository.cs
+│   ├── 🔁 UnitOfWork.cs
+│   └── 🌱 Seed
 │       ├── PetSeedData.cs
 │       ├── OwnerSeedData.cs
 │       └── TrackerSeedData.cs
 │
-└── ConsoleUI
-    ├── Program.cs
-    ├── MenuScreen.cs
-    ├── ReportsScreen.cs
-    └── Helpers
+└── 📁 ConsoleUI
+    ├── 🖥️ Program.cs
+    ├── 📜 MenuScreen.cs
+    ├── 📊 ReportsScreen.cs
+    └── 🧩 Helpers
         └── ValidationHelper.cs
-
