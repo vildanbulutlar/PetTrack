@@ -59,9 +59,7 @@ Proje, **bağımlılıkları azaltmak ve yönetilebilirliği artırmak** amacıy
 ---
 
 ## 🗂️ Proje Klasör Yapısı
-
-## 📂 Proje Klasör Yapısı
-
+```
 PetTrack
 ├── Domain
 │   ├── Entities
@@ -112,5 +110,4 @@ PetTrack
     ├── ReportsScreen.cs
     └── Helpers
         └── ValidationHelper.cs
-yaml
-Kodu kopyala
+
